@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { ThemeSwitch } from "../ThemeSwitch"
+import { ThemeSwitch } from "../app/(landing)/ThemeSwitch"
 
 export const Navbar = () => {
 
@@ -20,7 +20,7 @@ export const Navbar = () => {
         window.addEventListener("scroll", scrollHeader)
 
         return () => {
-            window.addEventListener('scroll', scrollHeader)
+            window.removeEventListener('scroll', scrollHeader)
         }
 
     }, [])
