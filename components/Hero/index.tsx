@@ -1,10 +1,21 @@
+import Image from "next/image";
+
 
 export const Hero = () => {
     return (
         <>
-            <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+            <section className="flex flex-row md:flex-row">
                 <div>
-                    Vinoth
+                    <h2>I'm Vinoth</h2>
+                    <h4>Senior Technical Lead</h4>
+                    <button>Contact me</button>
+                </div>
+                <div>
+                    <img
+                        src="/images/logo/logo-dark.png"
+                        alt="logo"
+                        className="hidden w-full dark:block"
+                    />
                 </div>
             </section>
         </>
