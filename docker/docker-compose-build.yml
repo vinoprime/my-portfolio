@@ -1,10 +1,10 @@
 version: '3.7'
 
 services:
-  build_my_portfolio_web:
-    container_name: build_my_portfolio_web
+  build_my_portfolio:
+    container_name: build_my_portfolio
     build: ./../
-    image: my_portfolio_web:0.0.1
+    image: my_portfolio:0.0.1
     networks:
       - proxy_net
 
