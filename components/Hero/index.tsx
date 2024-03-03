@@ -6,12 +6,12 @@ export const Hero = () => {
         <>
             <section className="flex flex-row md:flex-row">
                 <div>
-                    <h2>I'm Vinoth</h2>
+                    <h2>I am Vinoth</h2>
                     <h4>Senior Technical Lead</h4>
                     <button>Contact me</button>
                 </div>
                 <div>
-                    <img
+                    <Image
                         src="/images/logo/logo-dark.png"
                         alt="logo"
                         className="hidden w-full dark:block"

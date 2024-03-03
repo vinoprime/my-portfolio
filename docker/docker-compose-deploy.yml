@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  my_portfolio_web:
+    container_name: my_portfolio_web
+    image: docker.adhirven.com/my_portfolio_web:0.0.1
+    restart: unless-stopped
+    networks:
+      - proxy_net
+      # deploy:
+      # resources:
+      # limits:
+      # cpus: 1
+      # memory: 256M
+
+networks:
+  proxy_net:
+    external: true
